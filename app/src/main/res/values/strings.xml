@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">GameMonitoringApp</string>
+
+
+    <string name="user_agreement_text">Welcome to Game Sense! Here are some conditions our users must know:\n\n
+Game Sense is an application that runs in the background while users play mobile games.\n\n
+This application tracks the gaming screen time of its users and sends this data to the web administrator.\n\n
+Once the user reaches their gaming limit, the gathered data will notify parents via SMS.\n\n
+Game Sense adheres to Republic Act 10173 (Data Privacy Act), as the application only monitors and tracks the gaming screen time of the user.\n\n
+By agreeing to these terms and conditions, the application is permitted to use the user’s data.</string>
+
+
+
+        <string name="open">Open Navigation Drawer</string>
+        <string name="close">Close Navigation Drawer</string>
+
+</resources>

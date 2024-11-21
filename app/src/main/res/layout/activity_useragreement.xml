@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp">
+
+    <!-- CardView with background logo -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:background="@android:color/white"
+        android:alpha="0.9">
+
+        <!-- RelativeLayout inside CardView for positioning elements -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Background Logo Image -->
+            <ImageView
+                android:id="@+id/backgroundLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/logoblue"
+                android:scaleType="fitCenter"
+                android:alpha="0.2" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="User Agreement"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- User Agreement Text -->
+            <TextView
+                android:id="@+id/agreementText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginTop="16dp"
+                android:text="@string/user_agreement_text"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <!-- Check Box for Agreement -->
+            <CheckBox
+                android:id="@+id/agreeCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/agreementText"
+                android:layout_centerHorizontal="true"
+                android:text="I agree to the terms and conditions"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:buttonTint="@color/black"
+                android:layout_marginTop="24dp" />
+
+            <!-- Agree Button -->
+            <Button
+                android:id="@+id/agreeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/agreeCheckbox"
+                android:text="Agree"
+                android:textColor="@android:color/white"
+                android:background="@color/blue_500"
+                android:elevation="6dp"
+                android:padding="12dp"
+                android:layout_marginTop="16dp" />
+
+            <!-- Message TextView -->
+            <TextView
+                android:id="@+id/messageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/agreeButton"
+                android:layout_centerHorizontal="true"
+                android:text="By clicking Agree, you agree to the User Agreement."
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:layout_marginTop="8dp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
